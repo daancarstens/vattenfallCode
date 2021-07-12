@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js"></script>
+  <title>Game</title>
+</head>
+<body onload="myFunction()">
+  <div class="bg">
+    <a href="http://28462.hosts2.ma-cloud.nl/bewijzenmap/stage/Project/Home/">
+      <img src="img/vatl.png" alt="logo" class="logo" >
+    </a>
+  
+    <!-- !!!!!!!!!!!!!!!!!!!!!!! -->
+    <script>
+      var number = 0;
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+      
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+      
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+        console.log(number);
+        if (drop) {
+          number = number + 100;
+        }
+        document.getElementById("myText").innerHTML = number;
+      } 
+      
+      function myFunction() {
+        var number = 0;
+            document.getElementById("myText").innerHTML = number;
+            
+          console.log(number);
+          }
+           
+              </script>
+              <!-- /!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <div class="box1">
+        <!-- hieronder staan de draggable objects -->
+        <body>
+        <div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="div8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="div10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="div12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <div class="box2" id="Idtext">
+      <center><p class="scoret">Score<br><br><span id="myText"></span></p></center>
+    </div>
+
+    <div class="box3">
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../imgmap/filter.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="60">
+      </div>
+      <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../imgmap/tapwater.png" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="60">
+      </div>
+      <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../imgmap/warmtemeter.png" draggable="true" ondragstart="drag(event)" id="drag5" width="88" height="70">
+      </div>
+      <div id="div7" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../imgmap/verwarmingsgroep.png" draggable="true" ondragstart="drag(event)" id="drag7" width="88" height="90">
+      </div>
+      <div id="div9" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../imgmap/wwtest.png" draggable="true" ondragstart="drag(event)" id="drag9" width="88" height="90">
+      </div>
+      <div id="div11" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="../imgmap/drukverschil.png" draggable="true" ondragstart="drag(event)" id="drag11" width="88" height="70">
+      </div>
+    </div>
+
+    
+    <a href="http://28462.hosts2.ma-cloud.nl/bewijzenmap/stage/Project/Home/">
+      <img src="img/arrowb.png" alt="" class="arrowimg">
+    </a>
+    <a href="http://28462.hosts2.ma-cloud.nl/bewijzenmap/stage/Project/Info/">
+      <img src="img/image.png" alt="" class="infoimg">
+    </a>
+</div>
+</div>
+</body>
+</html>

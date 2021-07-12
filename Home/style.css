@@ -1,0 +1,61 @@
+.logo {
+    width: 18em;
+    margin-left: 4.5em;
+    margin-top: -2em;
+}
+
+/* Hier kan je de box aanpassen waar de informatie in staat */
+.box {
+    background-color: #E2E2E2;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 25px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    height: 65%;
+  }
+
+  /* hier kan je het uiterlijk van de knop aanpassen */
+  .button {
+    padding: 10px 15px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #4E4B48;
+    background-color: #E2E2E2;
+    border: none;
+    border-radius: 40px;
+    width: 300px;
+    height: 80px;
+    margin-top: -0.5em;
+  }
+  
+  /* Hier kan je de hover van de knop aanpassen */
+  .button:hover {background-color: #d3d0d0}
+  
+  /* Hier kan je de active versie van de knop aanpassen */
+  .button:active {
+    background-color: #bdbcbc;
+    transform: translateY(4px);
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Hier kan je de background aanpassen */
+  .bg {
+    background-image: url("img/back.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.infotekst {
+  padding: 4%;
+  font-size: 200%;
+  text-align: center;
+}

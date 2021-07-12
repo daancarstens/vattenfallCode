@@ -1,0 +1,171 @@
+/* Hier kan je het logo aanpassen */
+.logo {
+    width: 18em;
+    margin-left: 3.5em;
+    margin-top: -2em;
+}
+
+/* Hier kan je de box aanpassen waar het spel in staat in staat */
+.box1 {
+    background-color: #E2E2E2;
+    width: 50%;
+    margin-left: 19%;
+    border-radius: 80px;
+    height: 70%;
+    display: flex;
+  }
+
+/* Hier kan je de achtergrond aanpassen van de game zelf */ 
+.box1 {
+  background-image: url("../imgmap/backgame5.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+  /* Hier kan je de box aan passen waar de score instaat */
+  .box2 {
+    background-color: #E2E2E2;
+    width: 14%;
+    margin-left: 4%;
+    border-radius: 80px;
+    margin-top: -440px;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Hier kan je de box aan passen waar de Items instaan */
+.box3 {
+        background-color: #E2E2E2;
+        width: 26%;
+        margin-left: 70%;
+        border-radius: 80px;
+        margin-top: -25%;
+        height: 70%;
+    }
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+  
+  /* Hier kan je de background aanpassen */
+.bg {
+    background-image: url("img/back.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Hier kan je de I van informatie aanpassen */
+.infoimg {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    margin-left: 1450px;
+    margin-top: -100px;
+}
+
+/* Hier kan je de arrow image aanpassen */
+.arrowimg {
+    width: 4%;
+    height: auto;
+    margin-left: 50px;
+    transform: scaleX(-1);
+    margin-top: auto;
+}
+
+/* Hier kan je de items in het midden aanpassen */
+  .div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13%;
+    margin-left: 23.5%;
+    width: 90px;
+    height: 10%;
+    border: 3px solid black;
+    
+  }
+
+  .div4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28%;
+    margin-left: -12.8%;
+    width: 90px;
+    height: 10%;
+    border: 3px solid black;
+  }
+
+  .div6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37%;
+    margin-left: -11.5%;
+    width: 90px;
+    height: 10%;
+    border: 3px solid black;
+  }
+
+  .div8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9%;
+    margin-top: 22%;
+    width: 80px;
+    height: 95px;
+    border: 3px solid black;
+  }
+
+  .div10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -14.5%;
+    margin-top: 37%;
+    width: 90px;
+    height: 10%;
+    border: 3px solid black;
+  }
+
+  .div12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 33.5%;
+    margin-top: 24.8%;
+    width: 70px;
+    height: 95px;
+    border: 3px solid black;
+  }
+  
+  /* Hier kan je de items aan de rechter kant aanpassen */
+  #div1, #div3, #div5, #div7, #div9, #div11 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-top: 25%;
+    margin-left: 8.5%;
+    padding: 10px;
+    width: 15%;
+    height: 15%;
+    border: 4px solid black;
+  }
+
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoret {
+  font-size: 140%;
+}
